@@ -27,6 +27,13 @@ public class TestSearchCustomer {
     }
 
     @Test
+    public void testPageTitle() {
+        SearchCustomersPage searchCustomersPage = new SearchCustomersPage(driver);
+
+        Assert.assertEquals("Customers", searchCustomersPage.getTitle());
+    }
+
+    @Test
     public void testSearchByEmail() {
         SearchCustomersPage searchCustomersPage = new SearchCustomersPage(driver);
 

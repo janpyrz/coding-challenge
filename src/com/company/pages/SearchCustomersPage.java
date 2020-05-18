@@ -39,4 +39,8 @@ public class SearchCustomersPage {
     public void checkMatchCaseBox() {
         driver.findElement(matchCase).click();
     }
+
+    public String getTitle() {
+        return driver.getTitle();
+    }
 }
